@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public abstract class Building extends EstateAgent{
+public abstract class Building{
     private String name;
     private String address;
     private int numberOfRooms;
@@ -11,12 +11,7 @@ public abstract class Building extends EstateAgent{
 
     ////////
 
-    public Building(String name, String address, int numberOfRooms, String datOfConstruction){
-        this.name = name;
-        this.address = address;
-        this.numberOfRooms = numberOfRooms;
-        this.datOfConstruction = datOfConstruction;
-    }
+
     public Building(String name, String address, int numberOfRooms){
         LocalDate today = LocalDate.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-mm-dd");

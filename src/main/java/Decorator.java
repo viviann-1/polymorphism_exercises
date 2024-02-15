@@ -10,8 +10,8 @@ abstract class Decorator {
 
 class Painter extends Decorator {
 
-    void decorate(){
-        System.out.println("Painting instead");
+    void decorate(String room){
+        System.out.println("Painting " + room);
     }
 }
 
